@@ -51,6 +51,11 @@ window.XLMButton = {
                 return;
             }
 
+            if (!options.destination) {
+    console.error("Stellar destination is required");
+    return;
+}
+
             const memo = options.memo || "Tip";
 
             const uri =
