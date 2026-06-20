@@ -51,8 +51,10 @@ window.XLMButton = {
                 return;
             }
 
+            const memo = options.memo || "Tip";
+
             const uri =
-            `web+stellar:pay?destination=${options.destination}&amount=${amount}`;
+            `web+stellar:pay?destination=${options.destination}&amount=${amount}&memo=${encodeURIComponent(memo)}&memo_type=MEMO_TEXT`;
 
             const isMobile =
                 /Android|iPhone|iPad/i.test(navigator.userAgent);
