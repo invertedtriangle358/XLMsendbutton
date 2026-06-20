@@ -13,7 +13,7 @@
         errorDiv.innerText = "";
         qrcodeContainer.style.display = "none";
 
-        const destination = "GDL62....YOUR_STELLAR_ADDRESS...."; 
+        const destination = "YOUR_STELLAR_ADDRESS...."; 
         
         const amount = amountInput.value; 
         if (!amount || parseFloat(amount) <= 0) {
